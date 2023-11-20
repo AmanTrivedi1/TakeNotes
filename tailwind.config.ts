@@ -18,7 +18,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/background.svg')",
-        "lighmode-background": "url('/lighmodebackground.svg')",
+        "lighmode-background": "url('/ligntmodebackground.jpg')",
       },
       colors: {
         border: "hsl(var(--border))",

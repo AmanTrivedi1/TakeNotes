@@ -11,6 +11,7 @@ import Link from "next/link";
 import { useScrollTop } from "@/hooks/use-scroll-top";
 import { ModeToggle } from "@/components/mode-toggle";
 import { cn } from "@/lib/utils";
+import AnimatedSvg from "./animatedsvg";
 const MarketingPage = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   const scrolled = useScrollTop();
@@ -25,7 +26,7 @@ const MarketingPage = () => {
             )}
           >
             {/* <Logo /> */}
-            <div className="md:ml-auto md:justify-end justify-between w-full flex items-center gap-x-2">
+            <div className="md:ml-auto md:justify-end justify-end w-full flex items-center gap-x-2">
               {isLoading && <Spinner />}
               {!isAuthenticated && !isLoading && (
                 <>
