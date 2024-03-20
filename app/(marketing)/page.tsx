@@ -16,25 +16,18 @@ const MarketingPage = () => {
   const { isAuthenticated, isLoading } = useConvexAuth();
   const scrolled = useScrollTop();
   return (
-    <div className="">
-      <div className="h-screen fixed  flex flex-col bg-lighmode-background dark:bg-hero-pattern w-full  bg-cover ">
-        <div className="flex  fixed w-full flex-col items-center justify-center md:justify-start text-center gap-y-8 flex-1 px-6 pb-10">
+    <>
           <div
-            className={cn(
-              "z-50   top-0 flex items-start justify-start w-full p-6",
-              scrolled && " shadow-sm"
-            )}
-          >
-            {/* <Logo /> */}
-            <div className="md:ml-auto md:justify-end justify-end w-full flex items-center gap-x-2">
-              {isLoading && <Spinner />}
-              {!isAuthenticated && !isLoading && (
-                <>
-                  <SignInButton mode="modal">
-                    <Button variant="ghost" size="sm">
-                      Log in
-                    </Button>
-                  </SignInButton>
+            className={cn( " absolute z-50 right-4 ",scrolled && " shadow-sm")}>
+            <div className="flex gap-x-4 mt-4">
+                {isLoading && <Spinner />}
+                 {!isAuthenticated && !isLoading && (
+                  <>
+                   <SignInButton mode="modal">
+                     <Button variant="ghost" size="sm">
+                       Log in
+                     </Button>
+                   </SignInButton>
                 </>
               )}
               {isAuthenticated && !isLoading && (
@@ -46,9 +39,8 @@ const MarketingPage = () => {
             </div>
           </div>
           <Heading />
-        </div>
-      </div>
-    </div>
+        </>
+   
   );
 };
 
