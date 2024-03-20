@@ -24,7 +24,7 @@ const MarketingPage = () => {
                  {!isAuthenticated && !isLoading && (
                   <>
                    <SignInButton mode="modal">
-                     <Button variant="ghost" size="sm">
+                     <Button variant="custom" size="sm">
                        Log in
                      </Button>
                    </SignInButton>
