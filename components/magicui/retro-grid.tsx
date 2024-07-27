@@ -37,7 +37,7 @@ export default function RetroGrid({ className }: { className?: string }) {
     </div>
      <div className="  flex   flex-col items-center justify-center">
     
-       <h1 className="flex items-center max-w-4xl   text-center justify-center mt-80 md:text-7xl text-4xl p-2 font-semibold">
+       <h1 className="flex items-center max-w-4xl   text-center justify-center md:mt-80 mt-40 md:text-7xl text-4xl p-2 font-semibold">
        Your Ideas, Documents, & Plans. Unified. Welcome to TakeNote
 
        </h1>
